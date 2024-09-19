@@ -1,0 +1,53 @@
+<!--Flex boxes means they are flexible boxes according to the screen size, when the screen is squeezed then the boxes in the page also get places rather than missing.--><!DOCTYPE html>
+<!--By default the flex box direction is Row-wise.-->
+<!---->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 500px;
+        background-color: aqua;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center; or end;*/
+        /*align items:center;*/
+        /*Justify content always take care of horizontal line, align always take care of vertical line alignment.*/
+        /*space evenly, space around,flex-wrap:adjusts the boxes vertical and horizontal*/
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+      }
+      .box1 {
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .box2 {
+        background-color: blueviolet;
+      }
+      .box3 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--Justify-content-->
+      <div class="box box1">
+        <h1>Hello!<br />world</h1>
+      </div>
+      <!--<div class="box box2"></div>
+      <div class="box box3"></div>-->
+    </div>
+  </body>
+</html>
